@@ -47,7 +47,7 @@ new ResizeObserver(scroll).observe(tw);
 const typeWriter = new Typewriter("#typewriter", {
   cursor: null,
   loop: false,
-  delay: 50,
+  delay: 60,
 });
 
 function changeImage(imageName) {
