@@ -86,14 +86,6 @@ body {
   position: relative;
   background-color: hsla(29, 25%, 17%, 0.5);
 }
-.page__illustration .illustration__content {
-  height: 100%;
-}
-.page__illustration .illustration__frame {
-  height: 100%;
-  width: min(100%, 40rem);
-  position: absolute;
-}
 .page__text {
   display: flex;
   flex-direction: column;
@@ -106,6 +98,15 @@ body {
 .page__text p::first-letter {
   font-size: 3rem;
   font-weight: 700;
+}
+
+.illustration__content {
+  height: 100%;
+}
+.illustration__frame {
+  height: 100%;
+  width: min(100%, 40rem);
+  position: absolute;
 }
 
 .animation {

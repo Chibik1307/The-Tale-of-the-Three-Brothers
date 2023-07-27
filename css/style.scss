@@ -98,16 +98,6 @@ body {
     align-items: center;
     position: relative;
     background-color: hsla(29, 25%, 17%, 0.5);
-
-    .illustration__content {
-      height: 100%;
-    }
-
-    .illustration__frame {
-      height: 100%;
-      width: min(100%, 40rem);
-      position: absolute;
-    }
   }
 
   &__text {
@@ -124,6 +114,18 @@ body {
       font-size: 3rem;
       font-weight: 700;
     }
+  }
+}
+
+.illustration {
+  &__content {
+    height: 100%;
+  }
+
+  &__frame {
+    height: 100%;
+    width: min(100%, 40rem);
+    position: absolute;
   }
 }
 
