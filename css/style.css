@@ -86,27 +86,13 @@ body {
   position: relative;
   background-color: hsla(29, 25%, 17%, 0.5);
 }
-.page__illustration__content {
+.page__illustration .illustration__content {
   height: 100%;
 }
-.page__illustration__frame {
+.page__illustration .illustration__frame {
   height: 100%;
   width: min(100%, 40rem);
   position: absolute;
-}
-.page .animation {
-  animation: opacity 800ms ease-in-out;
-}
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .page__text {
   display: flex;
@@ -120,6 +106,22 @@ body {
 .page__text p::first-letter {
   font-size: 3rem;
   font-weight: 700;
+}
+
+.animation {
+  animation: opacity 800ms ease-in-out;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

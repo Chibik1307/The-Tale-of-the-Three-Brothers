@@ -99,30 +99,14 @@ body {
     position: relative;
     background-color: hsla(29, 25%, 17%, 0.5);
 
-    &__content {
+    .illustration__content {
       height: 100%;
     }
 
-    &__frame {
+    .illustration__frame {
       height: 100%;
       width: min(100%, 40rem);
       position: absolute;
-    }
-  }
-
-  .animation {
-    animation: opacity 800ms ease-in-out;
-  }
-
-  @keyframes opacity {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
     }
   }
 
@@ -140,5 +124,21 @@ body {
       font-size: 3rem;
       font-weight: 700;
     }
+  }
+}
+
+.animation {
+  animation: opacity 800ms ease-in-out;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
