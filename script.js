@@ -1,4 +1,24 @@
-const illustration = document.getElementById("illustration");
+document.addEventListener("DOMContentLoaded", () => {
+  const images = new Array();
+  function preloadImages(...images) {
+    images.forEach((image, i) => {
+      image = new Image();
+      image.src = preloadImages.arguments[i];
+    });
+  }
+
+  preloadImages(
+    "./images/illustrations/1.png",
+    "./images/illustrations/2.png",
+    "./images/illustrations/3.png",
+    "./images/illustrations/4.png",
+    "./images/illustrations/5.png",
+    "./images/illustrations/6.png",
+    "./images/illustrations/7.png"
+  );
+});
+
+const illustration = document.querySelector(".illustration__content");
 const tw = document.getElementById("typewriter");
 const content = document.querySelector(".page");
 const imagesMap = {
@@ -27,11 +47,17 @@ new ResizeObserver(scroll).observe(tw);
 const typeWriter = new Typewriter("#typewriter", {
   cursor: null,
   loop: false,
-  delay: 60,
+  delay: 50,
 });
 
 function changeImage(imageName) {
-  illustration.style.backgroundImage = `url(./images/illustrations/${imageName}.png)`;
+  illustration.classList.add("animation");
+  setTimeout(() => {
+    illustration.src = `./images/illustrations/${imageName}.png`;
+  }, 500);
+  setTimeout(() => {
+    illustration.classList.remove("animation");
+  }, 1000);
 }
 
 function intersectionObserving() {
