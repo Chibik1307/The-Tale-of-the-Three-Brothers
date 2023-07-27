@@ -110,7 +110,7 @@ body {
 }
 
 .animation {
-  animation: opacity 800ms ease-in-out;
+  animation: opacity 1s ease-in-out;
 }
 
 @keyframes opacity {
