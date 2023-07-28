@@ -27,12 +27,7 @@ body {
 body {
   display: flex;
   justify-content: center;
-  background: linear-gradient(
-      to right bottom,
-      rgba(87, 62, 40, 0.5),
-      rgba(87, 62, 40, 0.5)
-    ),
-    url(../images/bg.webp);
+  background: linear-gradient(to right bottom, rgba(87, 62, 40, 0.5), rgba(87, 62, 40, 0.5)), url(../images/bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   scroll-behavior: smooth;
@@ -85,6 +80,7 @@ body {
 }
 .page__illustration {
   max-height: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +103,7 @@ body {
 
 .illustration__content {
   height: 100%;
+  width: 100%;
 }
 .illustration__frame {
   height: 100%;
